@@ -28,6 +28,5 @@ In order to provide a serial interface, the Buderus Logamatic 2107 has to be equ
 * Make the script buderus.py executable
 * Adjust the serial device and the database access credentials in logamatic.py as needed
 * Run the script via the provided systemd unit
-* If desired, set up a scheduled task to run put_to_archive.php in regular intervals to transfer the current status to a long-term archive. For 1 minute intervall, this can for example be achieved by the following cron job:
-~~~ * *     * * *   root    php /path/to/script/put_to_archive.sh ~~~
+* If desired, set up a scheduled task to run put_to_archive.php in regular intervals to transfer the current status to a long-term archive. For 1 minute intervall, this can for example be achieved by the following cron job: ``` * *     * * *   root    php /path/to/script/put_to_archive.sh ```
 
